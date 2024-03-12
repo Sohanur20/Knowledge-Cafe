@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 
 import { useEffect } from "react";
 import { useState } from "react";
+import Blog from "../Blog/Blog";
 
 
 const Blogs = () => {
@@ -17,12 +19,12 @@ const Blogs = () => {
     }, [])
 
     return (
-        <div>
+        <div className="border-2 w-2/3">
 
-            <h2>All data : {blogs.length} </h2>
+           <h2 className="text-center">blogs : {blogs.length}</h2>
 
             {
-                blogs.map(blog => )
+                blogs.map(blog => <Blog blog={blog} key={blog.id}></Blog>)
             }
         </div>
     );
