@@ -1,0 +1,44 @@
+[
+  
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co/kqNg0MP/Rectangle-1-1.png",
+      "title": "How to get your first job as a self-taught programmer",
+      "author_img": "https://s3-alpha-sig.figma.com/img/2fc1/8b06/52fc4e1cd6ca45524a376c0074e685a7?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CkM-bWN2D2CuG10IQtPI0-w33nPvp9sYBjCQtGp26JIX-RCilNTopAyeetO2X~-g57P6qCbS2FFhRSMASidG8UW2c96WYmMSTtMxVCqahXQbMfrB0vNDuzi-1-BHmlDx5lm5cO492i01VLFJhvFpdAEehT0DdiLlPFuCSwTF2hNm7qEBQIMmNeheXe05oMPEM13RRn1Vo3tRbmieo2Ct65fASI5G7ghu-hIUNrrN3xYmwXPchNrG91dpBiOmspWPlK-BT~zcYOHLNfZ5i-Csz3G~8NIdzChl98K1Wk-b7HcXJQiN9tlTco982HcquP5fW2V8a1vKzJBvK3F5PW94jQ__",
+      "posted_date": "2024-03-11",
+      "name" : "Mr. Raju",
+      "reading_time": "8 ",
+      "hashtags": ["#programming", "#beginners"]
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co/rcTBmNL/Rectangle-1-2.png",
+      "title": "Tech Trends 2024",
+      "author_img": "author3.jpg",
+      "name" : "Mr. Raju",
+      "posted_date": "2024-03-12",
+      "reading_time": "10 ",
+      "hashtags": ["#technology", "#innovation", "#future"]
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co/BP2Zwty/Rectangle-1.png",
+      "title": "The Mindful Way",
+      "author_img": "author4.jpg",
+      "name" : "Mr. Raju",
+      "posted_date": "2024-03-13",
+      "reading_time": "7 ",
+      "hashtags": ["#mindfulness", "#wellbeing", "#health"]
+    },
+    {
+      "id": 4,
+      "cover": "cover5.jpg",
+      "title": "Exploring the Deep Sea",
+      "author_img": "author5.jpg",
+      "name" : "Mr. Raju",
+      "posted_date": "2024-03-14",
+      "reading_time": "6",
+      "hashtags": ["#ocean", "#exploration", "#marine"]
+    }
+  ]
+  
