@@ -9,12 +9,19 @@ import Header from "./components/header/Header"
 function App() {
 
   const [bookmarks, setBookmarks] = useState([])
+  const [markTime , setMarktime] = useState([0])
 
 const handleAddBookmarks = (blog) =>{
 
-console.log('bookmark added will soon')
+const newBookmarks = [...bookmarks , blog]
+setBookmarks (newBookmarks)
 }
 
+
+const handleMarkasRead = (time) =>{
+const newReadingTime = parseInt(markTime + time) ;
+setMarktime(newReadingTime)
+}
 
   return (
     <main className="mx-auto container bg-emerald-300">
@@ -22,8 +29,8 @@ console.log('bookmark added will soon')
       <div className="p-6">
         <Header></Header>
         <div className="md:flex">
-        <Blogs handleAddBookmarks={handleAddBookmarks}></Blogs>
-        <Bookmarks></Bookmarks>
+        <Blogs handleAddBookmarks={ handleAddBookmarks} handleMarkasRead={handleMarkasRead}></Blogs>
+        <Bookmarks bookmarks={bookmarks} markTime={markTime} ></Bookmarks>
         </div>
       </div>
     </main>

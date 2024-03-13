@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { FaBookmark } from "react-icons/fa6";
 
 
-const Blog = ({ blog ,handleAddBookmarks}) => {
+const Blog = ({ blog ,handleAddBookmarks , handleMarkasRead}) => {
 
-    console.log(blog)
+    
 
     const { title, cover, author_img, author, reading_time, posted_date, hashtags
     } = blog
@@ -26,7 +26,7 @@ const Blog = ({ blog ,handleAddBookmarks}) => {
 
 
                 <div className=''>
-                    <button onClick={handleAddBookmarks} className='text-2xl bg-yellow-200 flex items-center gap-4 hover:bg-orange-200 p-5 rounded-full'><FaBookmark /> <span>{reading_time} min read</span></button>
+                    <button onClick={() => handleAddBookmarks(blog)} className='text-2xl bg-yellow-200 flex items-center gap-4 hover:bg-orange-200 p-5 rounded-full'><FaBookmark /> <span>{reading_time} min read</span></button>
                    
                 </div>
             </div>
@@ -39,6 +39,8 @@ const Blog = ({ blog ,handleAddBookmarks}) => {
 
                 }
             </p>
+
+            <button onClick={() => handleMarkasRead(reading_time)} className='text-xl  font-semibold text-blue-500 m-4 hover:bg-slate-200 p-2 rounded-2xl'>mark as read..</button>
 
         </div>
     );
